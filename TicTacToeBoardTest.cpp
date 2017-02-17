@@ -18,3 +18,14 @@ TEST(TicTacToeBoardTest, sanityCheck)
 {
 	ASSERT_TRUE(true);
 }
+
+TEST(TicTacToeBoardTest, checkWinner)
+{
+	TicTacToeBoard TTT;	
+	bool check;
+	if(TTT.getWinner() == X || TTT.getWinner() == O)
+	{
+		check = true;
+	}
+	ASSERT_FALSE(check);
+}
